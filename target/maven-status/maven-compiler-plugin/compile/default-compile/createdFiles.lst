@@ -1,0 +1,11 @@
+com/example/rest/model/UsuarioModel.class
+com/example/rest/repository/UsuarioRepository.class
+com/example/rest/model/UF.class
+com/example/rest/controller/UsuarioController.class
+com/example/rest/model/AbstractEntity.class
+com/example/rest/model/EnderecoModel.class
+com/example/rest/service/EnderecoService.class
+com/example/rest/DemoApplication.class
+com/example/rest/dto/UsuarioDtoRequest.class
+com/example/rest/service/UsuarioService.class
+com/example/rest/dto/UsuarioDtoResponse.class

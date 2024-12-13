@@ -22,7 +22,7 @@ public class UsuarioController {
             consumes = {MediaType.APPLICATION_JSON_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE}
     )
-    public UsuarioDtoResponse create(UsuarioDtoRequest usuario) throws IOException {
+    public UsuarioDtoResponse create(UsuarioDtoRequest usuario) {
 
     return usuarioService.create(usuario);
 
@@ -43,7 +43,7 @@ public class UsuarioController {
     )
     public UsuarioDtoResponse update(
             @PathVariable Long id,
-            @RequestBody UsuarioDtoRequest usuarioDto) throws IOException {
+            @RequestBody UsuarioDtoRequest usuarioDto) {
         return usuarioService.update(id, usuarioDto);
     }
     @DeleteMapping(value = "/{id}")

@@ -1,0 +1,11 @@
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/DemoApplication.java
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/controller/UsuarioController.java
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/dto/UsuarioDtoRequest.java
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/dto/UsuarioDtoResponse.java
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/model/AbstractEntity.java
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/model/EnderecoModel.java
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/model/UF.java
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/model/UsuarioModel.java
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/repository/UsuarioRepository.java
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/service/EnderecoService.java
+/home/daiana.soares/Área de Trabalho/projeto-java/demo/src/main/java/com/example/rest/service/UsuarioService.java

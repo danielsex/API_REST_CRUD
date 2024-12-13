@@ -10,7 +10,9 @@ import lombok.Setter;
 @Entity
 @Table(name="ENDERECO")
 public class EnderecoModel {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
     @Column(nullable=false)
     private String logradouro;
     @Column(nullable=false)

@@ -23,11 +23,14 @@ public class UsuarioService {
     @Autowired
     private EnderecoService enderecoService;
 
-    @Transactional(rollbackFor = Throwable.class)
-    public UsuarioDtoResponse create(UsuarioDtoRequest userDto) throws IOException {
-        EnderecoModel end = enderecoService.GetEndereco(userDto.getCep());
 
-        UsuarioModel userSalvo = userRepository.save(userDto.ToModel(end));
+    private EnderecoModel enderecoModel= new EnderecoModel();
+
+    @Transactional(rollbackFor = Throwable.class)
+    public UsuarioDtoResponse create(UsuarioDtoRequest userDto){
+        enderecoModel = enderecoService.GetEndereco(userDto.getCep());
+
+        UsuarioModel userSalvo = userRepository.save(userDto.ToModel(enderecoModel));
 
         return userSalvo.ToDtoResponse();
     }
@@ -59,7 +62,7 @@ public class UsuarioService {
     }
 
     @Transactional(rollbackFor = Throwable.class)
-    public UsuarioDtoResponse update(Long id, UsuarioDtoRequest usuarioDto) throws IOException {
+    public UsuarioDtoResponse update(Long id, UsuarioDtoRequest usuarioDto) {
 
         Optional<UsuarioModel> usuarioEncontrado = userRepository.findById(id);
         if (usuarioEncontrado.isPresent()) {
